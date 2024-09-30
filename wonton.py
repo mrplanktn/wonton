@@ -33,7 +33,7 @@ class WontonBot:
         self.end_color = (128, 0, 128)
 
     def banner(self):
-        os.system("title MIDAS BOT" if os.name == "nt" else "clear")
+        os.system("title WONTON BOT" if os.name == "nt" else "clear")
         os.system("cls" if os.name == "nt" else "clear")
         custom_fig = Figlet(font='slant')
         self.print_gradient_text(custom_fig.renderText(' MIDAS'), self.start_color, self.end_color)
@@ -322,5 +322,5 @@ class WontonBot:
             sys.exit()
 
 if __name__ == "__main__":
-    bot = MidasBot()
+    bot = WontonBot()
     bot.run()
